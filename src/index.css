@@ -1,8 +1,8 @@
-@font-face {
-  font-family: 'fontGame';
-  src: url('../font/Pony.ttf');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-
 .bookingMovie{
   font-family: 'fontGame';
 }
@@ -10,13 +10,23 @@
 
 .ghe{
   border: 3px solid orange;
-  width: 45px;
+  width: 35px;
   height: 35px;
   font-size: 12px;
   margin-left: 2%;
   margin-bottom: 1%;
   border-radius: 5px;
+  line-height: 30px;
+  color: black;
+  font-size: 16px;
+  background-color: beige;
+  transition: all .5s;
 }
+.ghe:hover {
+  background-color: brown;
+  color: white;
+}
+
 
 .rowNumber{
   /* font-size: 25px; */
@@ -63,13 +73,55 @@
 }
 
 .gheDangChon {
-  background: rgb(109, 238, 109);
-  border: 3px solid rgb(109, 238, 109);
-  color: #000;
+  background: brown;
+  border: 3px solid red;
+  color: white;
 
   cursor: pointer;
-  border-radius: 5px;
-  width: 45px;
+  border-radius: 50%;
+  width: 35px;
   height: 35px;
+  line-height: 30px;
 
+}
+
+
+
+/* bt dat ve  */
+.BTDatVe {
+  background-image: url('../public/image/bgmovie.jpg');
+  background-repeat: none;
+  background-size: cover;
+  min-height: 730px;
+  
+}
+/* .overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+} */
+.container {
+  background: rgba(245, 245, 220, 0.473);
+  border-radius: 5px;
+}
+.col-1 {
+  cursor: pointer;
+}
+.btn-seat-select{
+  width: 40px;
+  height: 40px;
+  background: beige;
+  border-radius: 8px;
+}
+.btn-seat-reserved {
+  width: 40px;
+  height: 40px;
+  background: brown;
+  border-radius: 8px;
+}
+.btn-seat-booked {
+  width: 40px;
+  height: 40px;
+  background: red;
+  border-radius: 8px;
 }
